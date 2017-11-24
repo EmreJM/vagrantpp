@@ -1,8 +1,8 @@
 class vagrantpp {
 
-	file { '/home/xubuntu/vagrantpp/Vagrantfile':
+	file { '/home/xubuntu/vagrant/Vagrantfile':
 
-		content => template('vagrantpp/Vagrantfile'),
+		content => template('vagrant/Vagrantfile'),
 }
 
 }
