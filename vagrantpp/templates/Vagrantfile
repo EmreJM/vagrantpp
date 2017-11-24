@@ -1,0 +1,8 @@
+Vagrant.configure(2) do |config|
+config.vm.box = "bento/ubuntu-16.04"
+config.vm.provision "shell", inline: $tscript
+
+config.vm.define "slave01" do |slave01|
+slave01.vm.hostname = "slave01"
+end
+end
