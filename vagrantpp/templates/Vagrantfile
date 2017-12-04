@@ -1,13 +1,13 @@
 
 Vagrant.configure("2") do |config|
- config.vm.define "sla1" do |sla1|
-  sal1.vm.box = "bento/centos-7.3"
-  sla1.vm.hostname = "sla1"
+ config.vm.define "slave01" do |slave01|
+  slave01.vm.box = "bento/centos-7.3"
+  slave01.vm.hostname = "slave01"
  end
 
- config.vm.define "sla2" do |sla2|
-  sla2.vm.box = "bento/fedora-26"
-  sla2.vm.hostname = "sla2"
+ config.vm.define "slave02" do |slave02|
+  slave02.vm.box = "bento/fedora-26"
+  slave02.vm.hostname = "slave02"
 end
 end
 
